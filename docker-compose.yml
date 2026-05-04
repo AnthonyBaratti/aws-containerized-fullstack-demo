@@ -1,0 +1,37 @@
+# Purpose: Creating a docker compose file for running services inside containers
+# Creator: Anthony Baratti
+# Date: 4/28/26
+
+services: # Services that run on docker up command
+  postgres:
+    image: postgres:16
+    container_name: portfolio-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: portfolio_user
+      POSTGRES_PASSWORD: portfolio_password
+      POSTGRES_DB: portfolio_db
+    ports:
+    - "5432:5432"
+    volumes: # Persistent data saves if docker restarts
+    - postgres_data:/var/lib/postgresql/data
+    - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql #Connects database through docker and runs table set up
+
+  backend:
+    build: ./backend 
+    container_name: portfolio-backend
+    restart: always
+    ports:
+    - "3000:3000"
+    environment:
+      PORT: 3000
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: portfolio_user
+      DB_PASSWORD: portfolio_password
+      DB_NAME: portfolio_db
+    depends_on: # start this container before backend
+      - postgres
+    
+volumes:
+  postgres_data:
