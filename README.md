@@ -26,6 +26,9 @@ This project demonstrates containerized application development using Docker and
 ### PostgreSQL Initialized
 ![PostgreSQL Initialized](screenshots/postgreSQL-init.png)
 
+### Task API Persistence Demo
+![Task API Demo](screenshots/task-api-demo.png)
+
 ## How to Run
 ```bash
 docker compose up --build
