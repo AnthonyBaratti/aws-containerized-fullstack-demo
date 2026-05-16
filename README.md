@@ -19,6 +19,7 @@ This project demonstrates containerized application development using Docker and
 
 ### Docker Containers Running
 ![Docker Containers](screenshots/docker-containers.png)
+![Frontend Container Addition](screenshots/frontend-backend-postgre-containers.png)
 
 ### Backend Health Check
 ![Backend Health Check](screenshots/backend-health.png)
@@ -28,6 +29,10 @@ This project demonstrates containerized application development using Docker and
 
 ### Task API Persistence Demo
 ![Task API Demo](screenshots/task-api-demo.png)
+
+### Task Creation & Deletion Demo
+![Frontend Task Creation](screenshots/frontend-task-creation.png)
+![Frontend Task Deletion](screenshots/frontend-task-deletion.png)
 
 ## How to Run
 ```bash

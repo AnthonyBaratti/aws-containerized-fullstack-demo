@@ -32,6 +32,16 @@ services: # Services that run on docker up command
       DB_NAME: portfolio_db
     depends_on: # start this container before backend
       - postgres
+
+  frontend:
+    build: ./frontend
+    container_name: portfolio-frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    
     
 volumes:
   postgres_data:
