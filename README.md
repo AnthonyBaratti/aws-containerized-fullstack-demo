@@ -49,6 +49,8 @@ This project demonstrates containerized application development using Docker and
 ### S3 Policy & Access
 ![S3 Policy](screenshots/s3-policy-access.png)
 
+### S3 Static Frontend
+![S3 Frontend](screenshots/s3-static-frontend.png)
 
 ## How to Run
 ```bash
