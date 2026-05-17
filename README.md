@@ -1,58 +1,28 @@
 # Dockerized Full Stack Portfolio Demo
-
+[Skip to AWS Section](#aws-deployment)
 ## Overview
-This project demonstrates containerized application development using Docker and Docker Compose.
+This project demonstrates containerized application development using Docker and Docker Compose.<br>
+
+[View Detailed Docker Notes](docs/docker-notes.md)
 
 ## Current Features
-- PostgreSQL database running in a container
-- Node.js/Express backend in container
-- Health check endpoint
+
+- Containerized full-stack development environment
+- Node.js/Express REST API backend
+- PostgreSQL relational database integration
+- Docker Compose orchestration for multi-service deployment
+- Persistent database storage using Docker volumes
+- Environment-based configuration management
+- Health monitoring endpoint for backend verification
+- Scalable architecture designed for future AWS ECS/Fargate deployment
 
 ## Tech Stack
+
 - Docker
 - Docker Compose
 - Node.js
 - Express
 - PostgreSQL
 
-## Screenshots (Docker)
+# AWS Deployment
 
-### Backend & Postgre Containers in Docker
-![Docker Containers](screenshots/docker-containers.png)
-
-### Frontend added to Docker Containers
-![Frontend Container Addition](screenshots/frontend-backend-postgre-containers.png)
-
-### Backend Health Check
-![Backend Health Check](screenshots/backend-health.png)
-
-### PostgreSQL Initialized
-![PostgreSQL Initialized](screenshots/postgreSQL-init.png)
-
-### Task API Persistence Demo
-![Task API Demo](screenshots/task-api-demo.png)
-
-### Frontend UI Task Creation
-![Frontend Task Creation](screenshots/frontend-task-creation.png)
-
-### Frontend UI Task Deletion
-![Frontend Task Deletion](screenshots/frontend-task-deletion.png)
-
-## Screenshots (AWS)
-
-### Creating dist file for S3 bucket
-![Dist file creation](screenshots/dist-folder-creation.png)
-
-### S3 Bucket
-![S3 Bucket](screenshots/s3-bucket.png)
-
-### S3 Policy & Access
-![S3 Policy](screenshots/s3-policy-access.png)
-
-### S3 Static Frontend
-![S3 Frontend](screenshots/s3-static-frontend.png)
-
-## How to Run
-```bash
-docker compose up --build
-```
