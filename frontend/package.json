@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "Frontend UI for docker and AWS portfolio project",
     "scripts" : {
-        "dev": "vite --host 0.0.0.0"
+        "dev": "vite --host 0.0.0.0",
+        "build": "vite build"
     },
     "dependencies": {
         "@vitejs/plugin-react": "^4.2.1",

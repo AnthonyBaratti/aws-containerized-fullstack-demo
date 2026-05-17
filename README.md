@@ -15,7 +15,7 @@ This project demonstrates containerized application development using Docker and
 - Express
 - PostgreSQL
 
-## Screenshots
+## Screenshots (Docker)
 
 ### Backend & Postgre Containers in Docker
 ![Docker Containers](screenshots/docker-containers.png)
@@ -37,6 +37,18 @@ This project demonstrates containerized application development using Docker and
 
 ### Frontend UI Task Deletion
 ![Frontend Task Deletion](screenshots/frontend-task-deletion.png)
+
+## Screenshots (AWS)
+
+### Creating dist file for S3 bucket
+![Dist file creation](screenshots/dist-folder-creation.png)
+
+### S3 Bucket
+![S3 Bucket](screenshots/s3-bucket.png)
+
+### S3 Policy & Access
+![S3 Policy](screenshots/s3-policy-access.png)
+
 
 ## How to Run
 ```bash
